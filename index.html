@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atividade 01</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <style>
+        .card img {
+            transition: transform 0.3s;
+        }
+    </style>
 </head>
 <body>
     <div class="classe">
         <h1>The Last Of Us</h1>
         <div class="card">
-            <img height="300px"  src="img/foto1.jpg" alt="">
+            <img height="300px" src="img/foto1.jpg" alt="">
             <img height="300px" src="img/foto2.jpg" alt="">
-            <img height="300px" src="img/foto3.jpg"alt="">
+            <img height="300px" src="img/foto3.jpg" alt="">
         </div>
     </div>
-    
 
+    <script>
+        const images = document.querySelectorAll('.card img');
+
+        images.forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.1)';
+            });
+            image.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>
