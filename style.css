@@ -8,19 +8,19 @@ body{
     color: aliceblue;
     width: 100vw;
   height: 100vh;
-  margin: 0;
+  margin: 0;  
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #4a5379;
+  background: #191c29;
   text-align: center;
 }
 
 .card{
     position: sticky;
     top: 0;
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 1.5rem;
-    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    box-shadow: 0 -0.5rem 1rem rgba(255, 255, 255, 0.15);
     border-radius: 4px;
 }
