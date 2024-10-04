@@ -28,8 +28,11 @@
             image.addEventListener('mouseenter', () => {
                 image.style.transform = 'scale(1.1)';
             });
-            image.addEventListener('mouseleave', () => {
-                image.style.transform = 'scale(1)';
+            image.addEventListener('click', () => {
+                image.style.transform = 'rotate(10deg)';
+                setTimeout(() => {
+                    image.style.transform = 'rotate(0deg)';
+                }, 300);
             });
         });
     </script>
